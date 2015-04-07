@@ -1,0 +1,6 @@
+wheel==0.23.0
+ipython
+scipy
+numpy
+matplotlib
+scikit-learn
