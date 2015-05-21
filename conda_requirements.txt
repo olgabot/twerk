@@ -1,4 +1,4 @@
-wheel=23.0
+wheel
 ipython
 scipy
 numpy
