@@ -166,7 +166,7 @@ class NetworkBuilder(object):
         return pd.DataFrame(bicor_matrix, index=X.columns, columns=X.columns)
 
     def topological_overlap(self, correlated, adjacency, axis=0, signed=True):
-        adjacency =
+        # adjacency =
         pairwise_connectivity = self.node_pair_connectivity(adjacency,
                                                             axis=axis)
         connectivity = self.node_connectivity(adjacency, axis=axis)
