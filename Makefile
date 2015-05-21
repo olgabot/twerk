@@ -35,19 +35,17 @@ clean-test:
 	rm -fr htmlcov/
 
 lint:
-	flake8 twerk tests
+	flake8 --exclude docs twerk
 
 test:
-	python setup.py test
-
-test-all:
-	tox
+	cp testing/matplotlibrc .
+	py.test
+	rm matplotlibrc
 
 coverage:
-	coverage run --source twerk setup.py test
-	coverage report -m
-	coverage html
-	open htmlcov/index.html
+	cp testing/matplotlibrc .
+	py.test --cov twerk --cov-report term-missing twerk/tests/
+	rm matplotlibrc
 
 docs:
 	rm -f docs/twerk.rst
