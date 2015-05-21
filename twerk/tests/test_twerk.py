@@ -10,6 +10,7 @@ Tests for `twerk` module.
 
 import pandas.util.testing as pdt
 
+
 class TestNetworkBuilder(object):
 
     def test_init(self, X, correlation):
