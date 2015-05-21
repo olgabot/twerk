@@ -23,7 +23,7 @@ before_install:
 install:
 - conda create -n testenv --yes python=$TRAVIS_PYTHON_VERSION
 - source activate testenv
-- conda install --yes --file requirements.txt
+- conda install --yes --file conda_requirements.txt
 - pip install coveralls
 
 # command to run tests, e.g. python setup.py test
